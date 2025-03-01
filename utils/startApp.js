@@ -6,10 +6,8 @@ import formEvents from '../events/formEvents';
 import navigationEvents from '../events/navigationEvents';
 import { getBooks } from '../api/bookData';
 import { showBooks } from '../pages/books';
-import loginButton from '../components/buttons/loginButton';
 
 const startApp = () => {
-  loginButton();
   domBuilder(); // BUILD THE DOM
   domEvents(); // ADD THE EVENT LISTENTERS TO THE DOM
   formEvents(); // ADD FORM EVENT LISTENTERS TO THE DOM
